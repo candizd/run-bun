@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Run &amp; Bun Dex</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#/dex">
+    <span class="brand-mark">R&amp;B</span>
+    <span class="brand-name">Field Dex</span>
+  </a>
+
+  <nav class="tabs" id="tabs">
+    <a href="#/dex" data-view="dex">Pokédex</a>
+    <a href="#/locations" data-view="locations">Locations</a>
+    <a href="#/items" data-view="items">Items</a>
+    <a href="#/extras" data-view="extras">Extras</a>
+    <a href="#/run" data-view="run">Run log</a>
+  </nav>
+
+  <div class="finder">
+    <input id="finder-input" type="search" autocomplete="off" spellcheck="false"
+           placeholder="Find a Pokémon, move, place or item" aria-label="Search everything">
+    <kbd class="finder-key">/</kbd>
+    <div id="finder-results" class="finder-results" hidden></div>
+  </div>
+</header>
+
+<main id="view" class="view"></main>
+
+<footer class="footer">
+  <p>
+    Built from <em>Learnset, Evolution Methods and Abilities.txt</em>,
+    <em>Pokémon Locations.xlsx</em> and <em>Item Locations.xlsx</em>.
+    Types and sprites come from the official games and may not match the hack.
+  </p>
+</footer>
+
+<script src="data.js"></script>
+<script src="run-store.js"></script>
+<script src="app.js"></script>
+<script src="views/dex.js"></script>
+<script src="views/pokemon.js"></script>
+<script src="views/locations.js"></script>
+<script src="views/items.js"></script>
+<script src="views/extras.js"></script>
+<script src="views/run.js"></script>
+<script>Dex.start();</script>
+</body>
+</html>

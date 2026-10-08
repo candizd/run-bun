@@ -1,0 +1,5 @@
+__pycache__/
+*.py[oc]
+
+# Downloaded PokeAPI responses — rebuilt by build.py on demand
+build/.cache/
