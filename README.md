@@ -1,11 +1,22 @@
 # Run & Bun Field Dex
 
-A local Pokédex for the Run & Bun romhack, generated from the three source
-files in this folder. No server, no npm, no internet at runtime.
+**→ [candizd.github.io/run-bun](https://candizd.github.io/run-bun/)**
+
+A Pokédex and nuzlocke tracker for the Run & Bun romhack, generated from the
+three source files in this folder. No server, no npm, no internet at runtime.
+
+Alongside the dex, the Run screen logs an encounter per location — caught,
+skipped or lost — and tallies the run as you go.
 
 ## Open it
 
-Double-click **`site/index.html`**.
+Use the link above, or double-click **`site/index.html`** to run it straight
+from disk.
+
+Your run is stored by your own browser (`localStorage`) and never leaves it:
+nothing is uploaded, and two people using the hosted site do not see each
+other's runs. Clearing site data clears the run, so the Run screen also exports
+it as a JSON file — that export is the real backup.
 
 ## Rebuild it
 
